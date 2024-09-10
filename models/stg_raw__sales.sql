@@ -11,7 +11,7 @@
      select
          date_date,
          orders_id,
-         pdt_id,
+         product_id,
          revenue,
          quantity
 
