@@ -4,13 +4,7 @@ models:
   - name: raw
     schema: gz_raw_data
     description: "Dataset"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
-
+    tables:
       - name: sales
         identifier: raw_gz_sales
         description: "sales table"
