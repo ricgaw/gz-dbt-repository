@@ -1,22 +1,3 @@
-version: 2
-
-sources:
-  Dataset: gz_raw_data
-  Tables:
-    raw_gz_sales
-    raw_gz_product
-    raw_gz_ship
-
-rename sources:
-  Dataset: raw
-  Tables:
-    sales
-    product
-    ship
-
-select *
-from {{source(’raw’, ‘sales’)}}
-
 with
 
  source as (
