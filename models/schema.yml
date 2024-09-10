@@ -1,6 +1,6 @@
 version: 2
 
-models:
+sources:
   - name: raw
     schema: gz_raw_data
     description: "Dataset"
