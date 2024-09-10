@@ -1,0 +1,1 @@
+select * from {{ sources('raw', 'sales') }}
