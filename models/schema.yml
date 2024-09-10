@@ -1,13 +1,18 @@
-Dataset: gz_raw_data
-Tables:
-raw_gz_sales
-raw_gz_product
-raw_gz_ship
-
 version: 2
 
- sources:
-   - gz_raw_data as raw
-   - raw_gz_sales as sales
-   - raw_gz_product as product
-   - raw_gz_ship as ship
+sources:
+  Dataset: gz_raw_data
+  Tables:
+    raw_gz_sales
+    raw_gz_product
+    raw_gz_ship
+
+rename sources:
+  Dataset: raw
+  Tables:
+    sales
+    product
+    ship
+
+select *
+from {{source(’raw’, ‘sales’)}}
