@@ -157,7 +157,7 @@ models:
             tests:
             - not_null
       models:
-        dbt_rgawlinski:
+        gz-dbt-repository:
         mart:
           +materialized: table
           finance:
