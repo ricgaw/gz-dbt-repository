@@ -158,5 +158,5 @@ models:
             - not_null
       models:
         finance_days.sql:
-          staging:
-            materialized: table
+          mart:
+            materialized: view
