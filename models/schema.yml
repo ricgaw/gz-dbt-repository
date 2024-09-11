@@ -156,3 +156,9 @@ models:
             description: shipping costs
             tests:
             - not_null
+      models:
+        dbt_rgawlinski:
+        mart:
+          +materialized: table
+          finance:
+            +schema: finance
