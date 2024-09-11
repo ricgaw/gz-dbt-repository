@@ -156,6 +156,6 @@ models:
             description: shipping costs
             tests:
             - not_null
-      my_new_project:
+      dbt_project:
         mart:
           +materialized: finance_days
