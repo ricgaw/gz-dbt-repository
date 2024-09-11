@@ -156,9 +156,7 @@ models:
             description: shipping costs
             tests:
             - not_null
-            models:
-              dbt-day-1:
-              mart:
-                +materialized: table
-                finance:
-                  +schema: finance_days
+      models:
+        finance_days.sql:
+          staging:
+            materialized: table
