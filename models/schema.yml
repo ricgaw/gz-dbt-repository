@@ -155,8 +155,9 @@ models:
           - name: ship_cost
             description: shipping costs
             tests:
-            - not_null
-              
-            
-              
-              
+            - not_null        
+
+      models:
+        my_new_project:
+          mart:
+            +materialized: table
