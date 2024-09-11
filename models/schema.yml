@@ -156,9 +156,3 @@ models:
             description: shipping costs
             tests:
             - not_null
-      models:
-        finance_days.sql:
-          mart:
-            +materialized: table
-            finance:
-              +schema: finance
