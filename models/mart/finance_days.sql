@@ -15,7 +15,5 @@
  GROUP BY  date_date
  ORDER BY  date_date DESC
 
- models:
-   my_new_project:
-     mart:
-       +materialized: finance_days
+finance_days.sql
+{{config(materialized='table')}}
