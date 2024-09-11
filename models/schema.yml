@@ -159,4 +159,6 @@ models:
       models:
         finance_days.sql:
           mart:
-            materialized: view
+            +materialized: table
+            finance:
+              +schema: finance
