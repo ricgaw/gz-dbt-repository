@@ -11,9 +11,8 @@
      select
          orders_id,
          shipping_fee,
-         shipping_fee_1,
          logCost,
-         ship_cost
+         CAST(ship_cost AS INT64) AS ship_cost
 
      from source
 
