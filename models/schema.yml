@@ -156,9 +156,9 @@ models:
             description: shipping costs
             tests:
             - not_null
-      models:
-        dbt_project:
-        mart:
-          +materialized: finance_days
-          finance:
-            +schema: finance
+models:
+  gz_raw_data
+  mart:
+    +materialized: table
+    finance:
+      +schema: finance
