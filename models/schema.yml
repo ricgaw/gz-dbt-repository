@@ -157,7 +157,7 @@ models:
             tests:
             - not_null
       models:
-        my_new_project:
+        gz-dbt-repository:
         mart:
           +materialized: table
           finance:
