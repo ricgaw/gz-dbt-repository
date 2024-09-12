@@ -157,7 +157,7 @@ models:
             tests:
             - not_null
       models:
-        schema.yml:
+        raw:
         mart:
           +materialized: table
           finance:
