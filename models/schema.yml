@@ -158,5 +158,7 @@ models:
             - not_null
       models:
         my_new_project:
-          mart:
-            +materialized: table
+        mart:
+          +materialized: table
+          finance:
+            +schema: finance
