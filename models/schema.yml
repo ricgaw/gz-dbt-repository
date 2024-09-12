@@ -157,6 +157,6 @@ models:
             tests:
             - not_null
       models:
-        finance_days:
-        mart:
-          +materialized: table
+        my_new_project:
+          mart:
+            +materialized: table
