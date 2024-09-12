@@ -157,8 +157,6 @@ models:
             tests:
             - not_null
       models:
-        raw:
+        finance_days:
         mart:
           +materialized: table
-          finance:
-            +schema: finance
