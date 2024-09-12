@@ -157,7 +157,7 @@ models:
             tests:
             - not_null
       models:
-        dbt-day-1:
+        schema.yml:
         mart:
           +materialized: table
           finance:
